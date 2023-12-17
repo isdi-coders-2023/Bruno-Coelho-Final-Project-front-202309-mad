@@ -1,0 +1,56 @@
+@import '../../vars.scss';
+
+.create-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+  }
+  .create-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      width: 21.875rem;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0.5rem;
+      display: inline-block;
+      border: 0.063rem solid #000000;
+    }
+
+    input[type='file'] {
+      display: none;
+    }
+    .file-upload {
+      margin: 0.5rem 0.5rem;
+      background-color: white;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: small;
+      border: 1px solid #000000;
+      display: inline-block;
+      padding: 0.1rem 8.3701rem;
+      color: #79808b;
+      cursor: pointer;
+    }
+  }
+  .create-buttons-container {
+    text-align: center;
+    button {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: azure color(srgb red green blue);
+      width: 21.875rem;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0.5rem;
+      display: inline-block;
+      border: 0.063rem solid #000000;
+      cursor: pointer;
+    }
+    p {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.our-service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #ffffff;
+
+  .our-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-card {
+    position: relative; /* Asegura que los elementos internos respeten el contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.8rem;
+    transition: filter 0.3s ease;
+  }
+
+  button {
+    width: 15rem;
+    height: 4rem;
+    background-color: #f1ebeb;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .service-card:hover img {
+    filter: brightness(80%);
+  }
+
+  .service-card:hover button {
+    background-color: #ddd;
+  }
+}

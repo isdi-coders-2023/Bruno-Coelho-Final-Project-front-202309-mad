@@ -1,0 +1,54 @@
+header {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+header {
+  background-color: srgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  width: 100%;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative; /* Contexto de apilamiento para el z-index */
+}
+
+.navbar-item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 22%;
+  display: none;
+  flex-direction: column;
+  background-color: #cfcdcd;
+  color: #000000;
+  z-index: 1;
+}
+
+.dropdown.open {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
