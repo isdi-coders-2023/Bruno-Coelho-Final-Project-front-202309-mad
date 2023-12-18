@@ -75,7 +75,7 @@ export function Register() {
       {hasRegister && (
         <div>
           <p>Registro correcto</p>
-          <Link to={'/login'}>
+          <Link to={'/'}>
             <button type="button">Continuar</button>
           </Link>
         </div>

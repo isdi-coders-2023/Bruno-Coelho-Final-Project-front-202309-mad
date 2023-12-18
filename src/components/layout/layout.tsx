@@ -41,7 +41,7 @@ export function Layout() {
       </div>
       <div className="layout">
         <img
-          src="banner.png"
+          src={'/banner.png'}
           alt="banner-women"
           className="banner-women"
           style={{ width: '100%', height: '' }}

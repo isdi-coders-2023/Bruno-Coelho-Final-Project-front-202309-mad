@@ -10,7 +10,11 @@ import nailsImage from '../../../public/nails.png';
 export function OurService() {
   return (
     <div className="our-service-container">
-      <p>Our Services</p>
+      <h2>Our Services</h2>
+      <p style={{ textAlign: 'center' }}>
+        There are many variations of <br />
+        passages of Lorem Ipsum
+      </p>
       <div className="our-services">
         <Link
           to={'/details/hair'}

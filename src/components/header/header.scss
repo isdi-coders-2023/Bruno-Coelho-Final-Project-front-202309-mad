@@ -1,14 +1,14 @@
 header {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  min-height: 15vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
 }
 
-header {
+.header-expanded {
   background-color: srgb(255, 255, 255);
   color: rgb(0, 0, 0);
   min-height: 10vh;
@@ -19,29 +19,40 @@ header {
   width: 100%;
   margin: 0;
 }
+
+.logged-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0.5rem;
   background-color: #ffffff;
   color: #000000;
   position: relative; /* Contexto de apilamiento para el z-index */
+  margin-top: 0.5rem;
 }
 
 .navbar-item {
+  color: #000000;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .dropdown {
   position: absolute;
   top: 100%;
-  left: 22%;
+  left: 26%; /* Ajustar el valor según sea necesario para otros dropdown */
   display: none;
   flex-direction: column;
-  background-color: #cfcdcd;
+  background-color: #fbfbfb;
   color: #000000;
   z-index: 1;
+  border-radius: 0.3rem;
 }
 
 .dropdown.open {
@@ -49,6 +60,20 @@ header {
 }
 
 .dropdown-item {
+  color: #000000;
   padding: 10px;
   cursor: pointer;
+}
+
+.dropdown a {
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+/* Ajustar el left para el dropdown de isUserDropdownOpen */
+.img-icono {
+  border-radius: 10%;
+  margin-top: -0.5rem;
 }
