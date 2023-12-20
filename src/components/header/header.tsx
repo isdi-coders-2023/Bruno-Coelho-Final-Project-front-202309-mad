@@ -28,7 +28,7 @@ export function Header() {
       <div className="container-logo">
         <img
           className="logo-image"
-          src={'/logo.png'}
+          src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106104/logo_kwvagx.png"
           alt="logo"
           style={{ width: '180px', height: '60px' }}
         />

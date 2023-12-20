@@ -1,10 +1,5 @@
 import './footer.scss';
 
-import twitterIcon from '../../../public/twitter.png';
-import facebookIcon from '../../../public/facebook.png';
-import youtubeIcon from '../../../public/youtube.png';
-import instagramIcon from '../../../public/instagram.png';
-
 export function Footer() {
   return (
     <footer>
@@ -12,7 +7,7 @@ export function Footer() {
         <div className="white-logo">
           <img
             className="logo-image-white"
-            src={'/logowhite.png'}
+            src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106104/logowhite_zoey9s.png"
             alt="logo"
             style={{ width: '145px', height: '70px' }}
           />
@@ -30,34 +25,30 @@ export function Footer() {
             </ul>
           </div>
           <div className="social-icons-footer">
-            <a
-              href="https://twitter.com/FlipaPodcast"
-              target="_blank"
-              rel="noopener noreferrer"
+            <img
               className="social-icon-footer"
-              style={{ backgroundImage: `url(${twitterIcon})` }}
-            ></a>
-            <a
-              href="https://www.facebook.com/flipapodcast"
-              target="_blank"
-              rel="noopener noreferrer"
+              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106106/twitter_c89igx.png"
+              alt="twitter icon"
+              style={{ width: '35px', height: '35px' }}
+            />
+            <img
               className="social-icon-footer"
-              style={{ backgroundImage: `url(${facebookIcon})` }}
-            ></a>
-            <a
-              href="https://www.youtube.com/@FlipaPodcast"
-              target="_blank"
-              rel="noopener noreferrer"
+              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106101/facebook_dcpxdf.png"
+              alt="facebook icon"
+              style={{ width: '35px', height: '35px' }}
+            />
+            <img
               className="social-icon-footer"
-              style={{ backgroundImage: `url(${youtubeIcon})` }}
-            ></a>
-            <a
-              href="https://instagram.com/flipapodcast?igshid=YmMyMTA2M2Y="
-              target="_blank"
-              rel="noopener noreferrer"
+              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106026/youtube_nzatou.png"
+              alt="youtube icon"
+              style={{ width: '35px', height: '35px' }}
+            />
+            <img
               className="social-icon-footer"
-              style={{ backgroundImage: `url(${instagramIcon})` }}
-            ></a>
+              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106103/instagram_ayn5o5.png"
+              alt="instagram icon"
+              style={{ width: '35px', height: '35px' }}
+            />
           </div>
         </div>
       </div>
