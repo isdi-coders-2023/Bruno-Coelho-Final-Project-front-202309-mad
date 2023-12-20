@@ -1,52 +1,47 @@
-// layout.scss
 .layout-container {
   position: relative;
-}
-// .banner-women {
-//   width: 87rem;
-//   height: 20rem;
-// }
 
-.social-icons {
-  position: absolute;
-  top: 50%;
-  right: 1.5rem;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  display: flex;
+  .social-icons {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
 
-  z-index: 1; /* Coloca los íconos por encima de la imagen de fondo */
+    z-index: 1;
 
-  .social-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 2rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 2rem;
-    cursor: pointer;
+    .social-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-bottom: 2rem;
+      background-size: cover;
+      background-position: center;
+      border-radius: 2rem;
+      cursor: pointer;
 
-    &.twitter-icon {
-      background-image: url('./twitter-icon.png'); /* Ajusta la ruta según la estructura de tu proyecto */
-    }
+      &.twitter-icon {
+        background-image: url('./twitter-icon.png');
+      }
 
-    &.facebook-icon {
-      background-image: url('./facebook-icon.png'); /* Ajusta la ruta según la estructura de tu proyecto */
-    }
+      &.facebook-icon {
+        background-image: url('./facebook-icon.png');
+      }
 
-    &.youtube-icon {
-      background-image: url('./youtube-icon.png'); /* Ajusta la ruta según la estructura de tu proyecto */
-    }
+      &.youtube-icon {
+        background-image: url('./youtube-icon.png');
+      }
 
-    &.instagram-icon {
-      background-image: url('./instagram-icon.png'); /* Ajusta la ruta según la estructura de tu proyecto */
+      &.instagram-icon {
+        background-image: url('./instagram-icon.png');
+      }
     }
   }
-}
 
-.layout {
-  position: relative;
-  z-index: -1; /* Coloca la imagen de fondo por detrás de los íconos */
+  .layout {
+    position: relative;
+    z-index: -1; /* Coloca la imagen de fondo por detrás de los íconos */
+  }
 }

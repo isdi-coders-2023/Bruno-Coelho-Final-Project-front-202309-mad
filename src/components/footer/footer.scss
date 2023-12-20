@@ -1,0 +1,71 @@
+// footer.scss
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .white-logo {
+    .logo-image-white {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .text-footer-container {
+    .text-footer {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .social-icons-footer {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .social-icon-footer {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      // Establece las imágenes de fondo para los íconos sociales
+      .social-icon-footer:nth-child(1) {
+        background-image: url('../../../public/twitter.png');
+      }
+
+      .social-icon-footer:nth-child(2) {
+        background-image: url('../../../public/facebook.png');
+      }
+
+      .social-icon-footer:nth-child(3) {
+        background-image: url('../../../public/youtube.png');
+      }
+
+      .social-icon-footer:nth-child(4) {
+        background-image: url('../../../public/instagram.png');
+      }
+    }
+  }
+}

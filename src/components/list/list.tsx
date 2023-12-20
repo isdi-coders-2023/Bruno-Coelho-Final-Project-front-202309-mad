@@ -19,7 +19,6 @@ export function List({ careType }: Props) {
       <div className="list-title-container">
         <h2>{careType.toUpperCase()}</h2>
       </div>
-      {/* <Filter></Filter> */}
       <ul className="cares-list">
         {cares.map((item) => (
           <Card key={item.id} care={item}></Card>

@@ -4,6 +4,7 @@ import { Register } from '../register/register';
 import { Login } from '../login/login';
 import { AdminPanel } from '../admin.panel/admin.panel';
 import { List } from '../list/list';
+import { Appointment } from '../appointment/appointment';
 const CreateCare = lazy(() => import('../../pages/create.care/create.care'));
 
 const Home = lazy(() => import('../../pages/home/home'));
@@ -36,6 +37,10 @@ export function AppRoutes() {
           <Route
             path="/details/nails"
             element={<List careType={'nails'}></List>}
+          ></Route>
+          <Route
+            path="/appointment"
+            element={<Appointment></Appointment>}
           ></Route>
         </Routes>
       </Suspense>

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './layout.scss';
 
 import twitterIcon from '../../../public/twitter.png';

@@ -9,17 +9,17 @@ export function UserButtons() {
   const { logout } = useUsers();
 
   return (
-    <section>
+    <section className="user-buttons-container">
       {!loggedUser && (
         <>
           <div className="user-item">
             <Link to={'/register/'}>
-              <button>Register</button>
+              <button className="user-buttons">Register</button>
             </Link>
           </div>
           <div className="user-item">
             <Link to={'/login/'}>
-              <button>Login</button>
+              <button className="user-buttons">Login</button>
             </Link>
           </div>
         </>
@@ -28,10 +28,14 @@ export function UserButtons() {
         <>
           <div className="user-item">
             {/* <div className="user-item-logout"> */}
-            <button onClick={logout}>Logout</button>
+            <button className="user-buttons" onClick={logout}>
+              Logout
+            </button>
             {/* </div> */}
             <Link to={'/admin-panel'}>
-              <button type="button">Admin Control</button>
+              <button className="user-buttons" type="button">
+                Admin Control
+              </button>
             </Link>
             <p>Hola {loggedUser.name}</p>
           </div>

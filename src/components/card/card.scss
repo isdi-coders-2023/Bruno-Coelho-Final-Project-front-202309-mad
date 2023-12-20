@@ -1,129 +1,213 @@
-@import '../../vars.scss';
+// card.scss
+
 .cares-card {
-  margin-block-end: 1.297rem;
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: white;
-    width: 10rem;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0 0 0.15rem 0;
-    .card-image-container {
-      img {
+  list-style: none;
+  margin: 1rem;
+}
+
+.card-container {
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  .card-image-container {
+    overflow: hidden;
+    max-height: 200px;
+
+    .img-cares {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+
+  .card-info-container {
+    padding: 1rem;
+
+    .card-type-container {
+      text-align: center;
+      button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+
+    .card-name-container {
+      margin-top: 1rem;
+
+      .card-name {
+        font-size: 1.5rem;
+        color: #333;
+        text-align: center;
+      }
+    }
+
+    .card-price-container {
+      margin-top: 0.5rem;
+      text-align: center;
+
+      .card-price {
+        color: #777;
+      }
+    }
+
+    .buttons-news {
+      margin-top: 1rem;
+
+      .inputs-admin {
         width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+        border: 0.1rem solid #ccc;
+        border-radius: 0.3rem;
       }
-      .desktop-front-img {
-        display: none;
-      }
-      .desktopBig-front-img {
-        display: none;
-      }
-    }
-    .card-info-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: antiquewhite;
-      width: 10rem;
-      height: 3.438rem;
-      border-radius: 0px 0px 10px 10px;
-      p {
-        margin-block: 0.125rem;
-        color: rgb(5, 5, 5);
-      }
-      .card-type-container {
-        font-size: 0.938rem;
-      }
-      .card-name-container {
-        font-size: 0.75rem;
-      }
-    }
-  }
-}
 
-@media (min-width: 440px) {
-  .cares-card {
-    .card-container {
-      width: 12.813rem;
-      height: 18.75rem;
-      .card-image-container {
-        height: 14.063rem;
-        display: flex;
-        align-items: center;
-        .mobile-front-img {
-          display: none;
-        }
-        .desktop-front-img {
-          display: flex;
+      .buttons-admin {
+        background-color: #27ae60;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #219d54;
         }
       }
-      .card-info-container {
-        width: 11.813rem;
-        height: 4.688rem;
-        .card-name-container {
-          p {
-            font-size: 0.875rem;
-          }
+    }
+
+    .admin-buttons-card {
+      margin-top: 1rem;
+
+      .buttons-admin {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #c0392b;
         }
-        .card-price-container {
-          p {
-            font-size: 1.25rem;
-          }
+
+        &:first-child {
+          margin-right: 0.5rem;
         }
       }
     }
   }
 }
 
-@media (min-width: 1050px) {
-  .cares-card {
-    margin-block-end: 2rem;
-    .card-container {
-      width: 15.938rem;
-      height: 21.875rem;
-      .card-image-container {
-        height: 17.188rem;
-        display: flex;
-        align-items: center;
-        .mobile-front-img {
-          display: none;
-        }
-        .desktop-front-img {
-          display: none;
-        }
-        .desktopBig-front-img {
-          display: flex;
-        }
-      }
-      .card-info-container {
-        width: 15.938rem;
-        height: 5.938rem;
-        .card-name-container {
-          p {
-            font-size: 1.125rem;
-          }
-        }
-        .card-price-container {
-          p {
-            font-size: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-}
+// .cares-card {
+//   background-color: rgb(255, 255, 255);
+//   border-radius: 1rem;
+//   .card-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//     background-color: rgb(255, 255, 255);
+//     width: 10rem;
+//     border-radius: 1rem;
 
-// .card-container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   .card-name-container {
-//     p {
-//       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-//         sans-serif;
+//     .card-image-container {
+//       .img-cares {
+//         width: 80%;
+//         display: block;
+//         margin: auto;
+//         border-radius: 1.5rem;
+//       }
+//       .desktop-front-img {
+//         display: none;
+//       }
+//     }
+//     .card-info-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       background-color: rgb(255, 255, 255);
+//       border-radius: 0px 0px 10px 10px;
+//       p {
+//         margin-block: 0.125rem;
+//         color: rgb(5, 5, 5);
+//       }
+//       .buttons-admin {
+//         padding: 0.4rem 1rem;
+//         font-size: 1rem;
+//         cursor: pointer;
+//         border-radius: 1rem;
+//         background-color: rgb(201, 201, 201);
+//         color: #333;
+//       }
+
+//       .buttons-admin:hover {
+//         background-color: #ddd;
+//       }
+//       .inputs-admin {
+//         width: 100%;
+//         height: 2rem;
+//         border-radius: 0.5rem;
+//       }
 //     }
 //   }
 // }
+
+// // @media (min-width: 1050px) {
+// .cares-card {
+//   margin-block-end: 2rem;
+//   .card-container {
+//     width: 20.938rem;
+//     height: 27.875rem;
+//     .card-image-container {
+//       height: 17.188rem;
+//       display: flex;
+//       align-items: center;
+//       .mobile-front-img {
+//         display: none;
+//       }
+//       .desktop-front-img {
+//         display: none;
+//       }
+//       .desktopBig-front-img {
+//         display: flex;
+//       }
+//     }
+//     .card-info-container {
+//       width: 15.5rem;
+//       height: 7rem;
+//       .card-name-container {
+//         p {
+//           font-size: 1.3rem;
+//           font-style: normal;
+//         }
+//       }
+//       .card-price-container {
+//         p {
+//           font-size: 1.2rem;
+//           font-style: unset;
+//         }
+//       }
+//       .admin-button-card {
+//         display: flex;
+//         border-radius: 5px;
+//       }
+//     }
+//   }
+// }
+// // }

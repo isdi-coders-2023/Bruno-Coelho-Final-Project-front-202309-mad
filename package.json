@@ -1,5 +1,5 @@
 {
-  "name": "final-project",
+  "name": "final-project-bruno-coelho-front",
   "version": "1.0.0",
   "description": "Beauty Care",
   "type": "module",
@@ -9,15 +9,17 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "build:ts": "tsc -w",
-    "test": "jest --watchAll --coverage",
-    "prepare": "husky install",
+    "test": "jest",
     "test:prod": "jest --watchAll --watchAll=false --coverage --passWithNoTests",
+    "test:w": "jest --watchAll --coverage --collectCoverageFrom=src/**/*.{ts,tsx}",
+    "test:f": "jest --watchAll --coverage",
+    "prepare": "husky install",
     "sass": "sass scss:css -w --no-source-map",
     "api": "json-server --watch ./api/db.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
-  "author": "Bruno Coelho",
+  "author": "Brunocoelho999",
   "license": "ISC",
   "prettier": {
     "singleQuote": true

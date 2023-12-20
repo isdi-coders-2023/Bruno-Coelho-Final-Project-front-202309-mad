@@ -1,8 +1,9 @@
+// card.tsx
+
 import { useCares } from '../../hooks/cares/use.cares';
 import { Link, useNavigate } from 'react-router-dom';
 import { Care } from '../../entities/care';
 import './card.scss';
-// import { makeImageURL } from '../../services/images';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import { useState } from 'react';
@@ -17,7 +18,6 @@ export function Card({ care }: Props) {
 
   const [showEditInputs, setShowEditInputs] = useState(false);
   const [inputFields, setInputFields] = useState({ name: '', price: '' });
-  // const [forceRerenderKey, setForceRerenderKey] = useState(0);
 
   const navigate = useNavigate();
 
@@ -30,64 +30,87 @@ export function Card({ care }: Props) {
     setInputFields(newState);
   };
 
-  const handleSendEditFields = async () => {
+  const handleEditFields = async () => {
     await editCare(inputFields, care.id);
-    navigate('/home');
+    navigate('/');
+  };
+
+  const handleBack = () => {
+    setShowEditInputs(false);
   };
 
   return (
     <li className="cares-card">
       <div className="card-container">
         <div className="card-image-container">
-          <Link
-            to={'/details/' + care.type}
-            style={{ textDecoration: 'none', color: 'inherit' }}
-          >
-            <img
-              src={care.careImg.url}
-              alt={`imagen de ${care.name}`}
-              onClick={() => handleDetailsPage(care)}
-              className="mobile-img"
-              data-testid="details"
-            />
-          </Link>
+          <img
+            src={care.careImg.url}
+            alt={`imagen de ${care.name}`}
+            onClick={() => handleDetailsPage(care)}
+            className="img-cares"
+            data-testid="details"
+          />
         </div>
         <div className="card-info-container">
-          <div className="card-type-container">
-            {!loggedUser?.admin && <button>Get an appointment</button>}
-          </div>
+          <Link
+            to={'/appointment'}
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <div className="card-type-container">
+              {!loggedUser?.admin && <button>Get an appointment</button>}
+            </div>
+          </Link>
           <div className="card-name-container">
             <p className="card-name">{care.name}</p>
           </div>
           <div className="card-price-container">
             <p className="card-price">Starting from {care.price}€</p>
           </div>
-          {showEditInputs && (
-            <div>
+          {showEditInputs ? (
+            <div className="buttons-news">
               <input
+                className="inputs-admin"
                 type="text"
-                placeholder="New Name"
+                placeholder="New name"
                 onChange={(event) => {
                   handleInputChange('name', event.target.value);
                 }}
               />
               <input
-                type="text"
-                placeholder="New Price"
+                className="inputs-admin"
+                type="number"
+                placeholder="New price"
                 onChange={(event) => {
                   handleInputChange('price', event.target.value);
                 }}
               />
-              <button onClick={() => handleSendEditFields()}>
-                Send new fields
+              <button
+                className="buttons-admin"
+                onClick={() => handleEditFields()}
+              >
+                Save
+              </button>
+              <button className="buttons-admin" onClick={() => handleBack()}>
+                Back
               </button>
             </div>
-          )}
-          {loggedUser?.admin && (
-            <div>
-              <button onClick={() => setShowEditInputs(true)}>Edit care</button>
-              <button onClick={() => deleteCare(care.id)}>Delete care</button>
-            </div>
+          ) : (
+            loggedUser?.admin && (
+              <div className="admin-buttons-card">
+                <button
+                  className="buttons-admin"
+                  onClick={() => setShowEditInputs(true)}
+                >
+                  Edit
+                </button>
+                <button
+                  className="buttons-admin"
+                  onClick={() => deleteCare(care.id)}
+                >
+                  Delete
+                </button>
+              </div>
+            )
           )}
         </div>
       </div>

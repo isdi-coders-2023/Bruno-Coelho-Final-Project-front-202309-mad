@@ -27,7 +27,7 @@ export function Register() {
   };
 
   return (
-    <>
+    <section className="register-container">
       <h2>Register</h2>
 
       {!hasRegister && (
@@ -35,14 +35,14 @@ export function Register() {
           <input
             type="text"
             name="name"
-            placeholder="Nombre"
+            placeholder="Name"
             required
             onChange={(e) => handleChange('name', e.target.value)}
           />
           <input
             type="text"
             name="surname"
-            placeholder="Apellidos"
+            placeholder="Surname"
             required
             onChange={(e) => handleChange('surname', e.target.value)}
           />
@@ -63,23 +63,23 @@ export function Register() {
           <input
             type="number"
             name="age"
-            placeholder="Edad"
+            placeholder="Age"
             onChange={(e) => handleChange('age', e.target.value)}
           />
-          <button onClick={handleSubmit}>Registrar</button>
+          <button onClick={handleSubmit}>Register</button>
           <Link to={'/home/'}>
-            <button type="button">Cancelar</button>
+            <button type="button">Cancel</button>
           </Link>
         </div>
       )}
       {hasRegister && (
-        <div>
-          <p>Registro correcto</p>
+        <div className="lets-care-container">
+          <p>Successful registration</p>
           <Link to={'/'}>
-            <button type="button">Continuar</button>
+            <button type="button">let's take care of ourselves</button>
           </Link>
         </div>
       )}
-    </>
+    </section>
   );
 }

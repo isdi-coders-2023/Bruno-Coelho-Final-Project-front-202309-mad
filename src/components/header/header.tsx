@@ -20,7 +20,7 @@ export function Header() {
   };
 
   const handleRoute = (route: string) => {
-    navigate(`/services/${route}`);
+    navigate(`/${route}`);
   };
 
   return (
@@ -70,7 +70,7 @@ export function Header() {
             </Link>
           </div>
         </div>
-        {/* <div className="navbar-item">Contact Us</div> */}
+
         <div className="navbar-item" onClick={handleUserDropdownToggle}>
           <img
             className="img-icono"

@@ -31,20 +31,34 @@ export function CreateCare() {
           <option value="eyebrows">Eyebrows</option>
           <option value="nails">Nails</option>
         </select>
-        <input type="text" name="name" placeholder="name" required />
         <input
+          className="inputs-create"
+          type="text"
+          name="name"
+          placeholder="name"
+          required
+        />
+        <input
+          className="inputs-create"
           type="text"
           name="description"
           placeholder="Add description"
           required
         />
-        <input type="text" name="price" placeholder="Precio" />
+        <input
+          className="inputs-create"
+          type="number"
+          name="price"
+          placeholder="Precio"
+        />
         <label className="file-upload">
           <input type="file" name="careImg" id="careImg" />
           Imagen
         </label>
         <div className="create-buttons-container">
-          <button type="submit">Add Service</button>
+          <button className="submit-button" type="submit">
+            Add Service
+          </button>
         </div>
       </form>
     </div>
