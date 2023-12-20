@@ -1,0 +1,37 @@
+.admin-panel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f6efef;
+
+  .admin-panel-h2 h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: -17.3rem;
+  }
+
+  .admin-panel-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .add-cares-button button {
+    padding: 1rem;
+    background-color: #6d7072;
+    color: #fff;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    position: relative;
+    top: -12rem;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #313437;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.register-container {
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 19rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    background-color: #c5b9b9;
+    top: -5rem;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #6d7072;
+      color: #fff;
+      border: 0.1rem solid #ccc;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #313437;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .lets-care-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .lets-care-container p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .lets-care-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
