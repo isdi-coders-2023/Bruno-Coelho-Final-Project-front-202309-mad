@@ -9,8 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    display: flex;
-
     z-index: 1;
 
     .social-icon {
@@ -21,27 +19,16 @@
       background-position: center;
       border-radius: 2rem;
       cursor: pointer;
+      transition: transform 0.3s ease-in-out;
 
-      &.twitter-icon {
-        background-image: url('./twitter-icon.png');
-      }
-
-      &.facebook-icon {
-        background-image: url('./facebook-icon.png');
-      }
-
-      &.youtube-icon {
-        background-image: url('./youtube-icon.png');
-      }
-
-      &.instagram-icon {
-        background-image: url('./instagram-icon.png');
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }
 
   .layout {
     position: relative;
-    z-index: -1; /* Coloca la imagen de fondo por detrás de los íconos */
+    z-index: -1;
   }
 }

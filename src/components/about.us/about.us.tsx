@@ -5,7 +5,7 @@ export function AboutUS() {
     <div className="about-us-container">
       <div className="image-about">
         <img
-          src={'/about.png'}
+          src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106107/about_kiglun.png"
           alt="banner-logo-smoke"
           className="banner-logo-smoke"
           style={{ width: '100%', height: '' }}
