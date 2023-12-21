@@ -6,7 +6,7 @@ export function Appointment() {
       <div className="container-image">
         <img
           className="confirmed-image"
-          src={'/confirmed.png'}
+          src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106100/confirmed_fzpv38.png"
           alt="logo"
           style={{ width: '30rem', height: '30rem' }}
         />

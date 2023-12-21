@@ -74,9 +74,9 @@ export function Header() {
         <div className="navbar-item" onClick={handleUserDropdownToggle}>
           <img
             className="img-icono"
-            src={'/user.png'}
+            src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106105/user_llt8mo.png"
             alt="user"
-            style={{ width: '30px', height: '30px', cursor: 'pointer' }}
+            style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}
           />
           <div className={`dropdown ${isUserDropdownOpen ? 'open' : ''}`}>
             <UserButtons></UserButtons>

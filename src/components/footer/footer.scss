@@ -1,5 +1,3 @@
-// footer.scss
-
 footer {
   background-color: #000;
   color: #fff;
@@ -39,8 +37,8 @@ footer {
 
       .social-icon-footer {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 2rem;
+        height: 2rem;
         background-size: cover;
         background-position: center;
         transition: transform 0.3s ease;
@@ -49,22 +47,15 @@ footer {
           transform: scale(1.2);
         }
       }
+    }
+  }
 
-      // Establece las imágenes de fondo para los íconos sociales
-      .social-icon-footer:nth-child(1) {
-        background-image: url('../../../public/twitter.png');
-      }
-
-      .social-icon-footer:nth-child(2) {
-        background-image: url('../../../public/facebook.png');
-      }
-
-      .social-icon-footer:nth-child(3) {
-        background-image: url('../../../public/youtube.png');
-      }
-
-      .social-icon-footer:nth-child(4) {
-        background-image: url('../../../public/instagram.png');
+  @media (max-width: 844px) {
+    .social-icons-footer {
+      .social-icon-footer {
+        &:hover {
+          transform: none; /* Desactiva el hover en pantallas más pequeñas */
+        }
       }
     }
   }

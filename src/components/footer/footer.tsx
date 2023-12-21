@@ -1,6 +1,11 @@
 import './footer.scss';
 
 export function Footer() {
+  const twitter = 'https://twitter.com/FlipaPodcast';
+  const facebook = 'https://www.facebook.com/flipapodcast';
+  const youtube = 'https://www.youtube.com/@FlipaPodcast';
+  const instagram = 'https://instagram.com/flipapodcast?igshid=YmMyMTA2M2Y=';
+
   return (
     <footer>
       <div className="footer-container">
@@ -8,7 +13,7 @@ export function Footer() {
           <img
             className="logo-image-white"
             src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106104/logowhite_zoey9s.png"
-            alt="logo"
+            alt="logo white"
             style={{ width: '145px', height: '70px' }}
           />
         </div>
@@ -25,30 +30,35 @@ export function Footer() {
             </ul>
           </div>
           <div className="social-icons-footer">
-            <img
-              className="social-icon-footer"
-              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106106/twitter_c89igx.png"
-              alt="twitter icon"
-              style={{ width: '35px', height: '35px' }}
-            />
-            <img
-              className="social-icon-footer"
-              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106101/facebook_dcpxdf.png"
-              alt="facebook icon"
-              style={{ width: '35px', height: '35px' }}
-            />
-            <img
-              className="social-icon-footer"
-              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106026/youtube_nzatou.png"
-              alt="youtube icon"
-              style={{ width: '35px', height: '35px' }}
-            />
-            <img
-              className="social-icon-footer"
-              src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106103/instagram_ayn5o5.png"
-              alt="instagram icon"
-              style={{ width: '35px', height: '35px' }}
-            />
+            <a href={twitter} target="_blank" rel="noopener noreferrer">
+              <img
+                className="social-icon-footer"
+                src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106106/twitter_c89igx.png"
+                alt="twitter icon"
+              />
+            </a>
+            <a href={facebook} target="_blank" rel="noopener noreferrer">
+              <img
+                className="social-icon-footer"
+                src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106101/facebook_dcpxdf.png"
+                alt="facebook icon"
+              />
+            </a>
+            <a href={youtube} target="_blank" rel="noopener noreferrer">
+              <img
+                className="social-icon-footer"
+                src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106026/youtube_nzatou.png"
+                alt="youtube icon"
+              />
+            </a>
+
+            <a href={instagram} target="_blank" rel="noopener noreferrer">
+              <img
+                className="social-icon-footer"
+                src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106103/instagram_ayn5o5.png"
+                alt="instagram icon"
+              />
+            </a>
           </div>
         </div>
       </div>

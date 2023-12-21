@@ -1,6 +1,9 @@
 .layout-container {
   position: relative;
-
+  .banner-women {
+    width: 100%;
+    height: auto;
+  }
   .social-icons {
     position: absolute;
     top: 50%;
@@ -12,8 +15,8 @@
     z-index: 1;
 
     .social-icon {
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
       margin-bottom: 2rem;
       background-size: cover;
       background-position: center;
@@ -30,5 +33,10 @@
   .layout {
     position: relative;
     z-index: -1;
+  }
+  @media (max-width: 844px) {
+    .social-icons {
+      display: none; /* Oculta los iconos cuando el ancho de la pantalla es menor de 844px */
+    }
   }
 }
