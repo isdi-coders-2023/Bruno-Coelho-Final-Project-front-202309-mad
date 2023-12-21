@@ -12,12 +12,14 @@
       font-size: 2.5rem;
       color: #333;
       margin-bottom: 1rem;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     }
 
     p {
       font-size: 1.2rem;
       color: #555;
       line-height: 1.5;
+      font-family: 'Times New Roman', Times, serif;
     }
   }
 
@@ -43,7 +45,7 @@
         color: inherit;
       }
 
-      .img-card {
+      .image-card {
         width: 100%;
         border-radius: 10px;
         overflow: hidden;

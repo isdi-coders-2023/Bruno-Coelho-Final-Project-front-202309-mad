@@ -1,5 +1,3 @@
-// card.scss
-
 .cares-card {
   list-style: none;
   margin: 1rem;
@@ -20,7 +18,6 @@
     .img-cares {
       width: 100%;
       height: auto;
-      cursor: pointer;
     }
   }
 
@@ -112,102 +109,3 @@
     }
   }
 }
-
-// .cares-card {
-//   background-color: rgb(255, 255, 255);
-//   border-radius: 1rem;
-//   .card-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//     background-color: rgb(255, 255, 255);
-//     width: 10rem;
-//     border-radius: 1rem;
-
-//     .card-image-container {
-//       .img-cares {
-//         width: 80%;
-//         display: block;
-//         margin: auto;
-//         border-radius: 1.5rem;
-//       }
-//       .desktop-front-img {
-//         display: none;
-//       }
-//     }
-//     .card-info-container {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       background-color: rgb(255, 255, 255);
-//       border-radius: 0px 0px 10px 10px;
-//       p {
-//         margin-block: 0.125rem;
-//         color: rgb(5, 5, 5);
-//       }
-//       .buttons-admin {
-//         padding: 0.4rem 1rem;
-//         font-size: 1rem;
-//         cursor: pointer;
-//         border-radius: 1rem;
-//         background-color: rgb(201, 201, 201);
-//         color: #333;
-//       }
-
-//       .buttons-admin:hover {
-//         background-color: #ddd;
-//       }
-//       .inputs-admin {
-//         width: 100%;
-//         height: 2rem;
-//         border-radius: 0.5rem;
-//       }
-//     }
-//   }
-// }
-
-// // @media (min-width: 1050px) {
-// .cares-card {
-//   margin-block-end: 2rem;
-//   .card-container {
-//     width: 20.938rem;
-//     height: 27.875rem;
-//     .card-image-container {
-//       height: 17.188rem;
-//       display: flex;
-//       align-items: center;
-//       .mobile-front-img {
-//         display: none;
-//       }
-//       .desktop-front-img {
-//         display: none;
-//       }
-//       .desktopBig-front-img {
-//         display: flex;
-//       }
-//     }
-//     .card-info-container {
-//       width: 15.5rem;
-//       height: 7rem;
-//       .card-name-container {
-//         p {
-//           font-size: 1.3rem;
-//           font-style: normal;
-//         }
-//       }
-//       .card-price-container {
-//         p {
-//           font-size: 1.2rem;
-//           font-style: unset;
-//         }
-//       }
-//       .admin-button-card {
-//         display: flex;
-//         border-radius: 5px;
-//       }
-//     }
-//   }
-// }
-// // }

@@ -15,9 +15,9 @@ export function OurService() {
         <div className="service-card">
           <Link to={'/details/hair'}>
             <img
-              className="img-card"
+              className="image-card"
               src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106103/hair_qmphdn.png"
-              alt="Hair"
+              alt="Hair girl"
             />
             <button className="button-service">hair</button>
           </Link>
@@ -26,9 +26,9 @@ export function OurService() {
         <div className="service-card">
           <Link to={'/details/eyebrows'}>
             <img
-              className="img-card"
+              className="image-card"
               src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106101/eyebrows_zpekfi.png"
-              alt="Eyebrows"
+              alt="Eyebrows with pencil"
             />
             <button className="button-service">Eyebrows</button>
           </Link>
@@ -37,9 +37,9 @@ export function OurService() {
         <div className="service-card">
           <Link to={'/details/eyelashes'}>
             <img
-              className="img-card"
+              className="image-card"
               src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106101/eyelashes_dide0n.png"
-              alt="Eyelashes"
+              alt="Eyelashes with mascara"
             />
             <button className="button-service">Eyelashes</button>
           </Link>
@@ -51,9 +51,9 @@ export function OurService() {
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <img
-              className="img-card"
+              className="image-card"
               src="https://res.cloudinary.com/dott6rqwf/image/upload/v1703106105/nails_aneu1s.png"
-              alt="Nails"
+              alt="Nails with nail polish"
             />
             <button className="button-service">Nails</button>
           </Link>
